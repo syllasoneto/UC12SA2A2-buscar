@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+<h1>Buscar</h1>
+<span th:text="${msg}"></span>
+<br><br>
+<form method="post">
+	Buscar : <input type="text" name="buscar" id="buscar">
+	<button type="submit">Enviar</button>
+</form>
+
+<span th:if="${buscar}">
+	O valor da busca é: <span th:text="${buscar}"></span>
+</span>
+
+</body>
+</html>
